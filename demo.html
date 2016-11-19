@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海報欄位申請系統</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+     <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+  <div class="ui container center">      
+    <h1 class="ui header title">學 生 活 動 中 心 海 報 欄 位 申 請 系 統</h1>  
+    <div class="ui top attached tabular menu">
+      <a class="item active" data-tab="first">鳥瞰圖</a>
+      <a class="item" data-tab="second">關於</a>
+      <a class="item" data-tab="third">申請</a>
+      <a class="item" data-tab="fourth">紀錄</a>
+      <a class="item" data-tab="fifth">修改和取消</a>
+    </div>
+    <div class="ui bottom attached tab segment active" data-tab="first">
+        <!-- panels map -->
+        <img class="ui fluid rounded image" src="./image/planelsMap.jpg">
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="second">
+      <div class="ui container about">
+          <!-- about -->
+          <div class="ui container about context">
+            <h1 class="ui header about">※ 國 立 中 興 大 學 學 生 會 行 政 中 心 海 報 管 理 辦 法</h1>
+            <ol class="ui list about">
+              <li value="◆">各社團所製作之文宣、海報。請先至學生會官網進行線上申請再送至學生會行政中心核蓋海報准貼印章與期限印章始可張貼放置。</li>
+              <li value="◆">海報大褂報支登記須確定完成手續並簽名，始可張貼放置，否則將一律予以取締清除清除。</li>
+              <li value="◆">張貼公告海報應先將欄位清除乾淨再張貼，可以跟學生會拍照檢舉是否有社團未清除。</li>
+              <li value="◆">超越張貼時效者各社團須自行收存清除。</li>
+              <li value="◆">校外機關活動海報，須經校內代理社團代為申請，日數以兩周為限。</li>
+              <li value="◆">若於圓廳外其他地點張貼海報，須向該地點管理單位登記。</li>
+              <li value="◆">各社團若申請於圓廳舉辦活動、擺攤時可於附近張貼海報，但須於活動結束後自行將海報清除。</li>
+              <li value="◆">大褂報每個社團每學期可以申請兩次，但不可同時申請或連續申請，每次張掛不得超過六天，而限制寬度為兩張全開海報紙，長度不能低於一樓天花板。</li>
+              <li value="◆">圓廳一樓佈告欄、樓梯海報
+                <ol>
+                    <li value="-">小型活動  EX 迎新、送舊(至多兩週)</li>
+                    <li value="-">大型活動  EX 周展、營隊(至多三週)</li>
+                    <li value="-">聯合活動  EX 聯合活動(至多四週)</li>
+                </ol>
+              </li>
+              <li value="◆">警告達兩次，則取消該學期張貼資格。</li>
+              <li value="◆">大褂報下緣請綁在2樓窗戶下方鐵桿上。</li>
+              <li value="◆">大褂報若搖搖欲墜經規勸請處理。</li>
+              <li value="◆">大褂報一個社團一次僅能掛一個欄位。</li>
+              <li value="◆">勿申請欄位卻未張貼海報。</li>
+              <li value="◆">勿惡意覆蓋在他人位於期之海報上。</li>
+              <li value="◆">勿超過自己社團申請之欄位上。</li>
+              <li value="◆">請使用無痕膠帶黏貼，有需要可至學生會借取。</li>
+              <li value="◆">可設計屬於自己社團之欄位。</li>
+              <li value="◆">地貼須於活動結束後全數清除乾淨。</li>
+              <li value="◆">一個活動之任一海報違反，算一次警告。</li>
+            </ol>
+          </div>   
+        </div>
+      </div>
+    <div class="ui bottom attached tab segment" data-tab="third">
+            <div class="ui grid">
+              <div class="two wide column"> </div>
+            </div>
+        <!-- 申請部分 -->
+          <div class="ui form select_organization">
+            <div class="inline fields">
+                <label for="associations">選擇你所屬單位:</label>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input class="hidden" tabindex="0" name="associations" checked="" type="radio">
+                    <label>學生社團</label>
+                  </div>
+                </div>
+            <div class="field">
+                  <div class="ui radio checkbox">
+                    <input class="hidden" tabindex="1" name="associations" type="radio">
+                    <label>學術單位</label>
+                  </div>
+            </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input class="hidden" tabindex="2" name="associations" type="radio">
+                    <label>行政單位</label>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="ui container" id="clubs">
+            <div class="ui form club">
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>宣傳海報活動名稱</label>
+                </div>
+                <div class="four wide field">
+                  <input type="text" name="activity_name" placeholder="宣傳海報活動名稱">
+                </div>
+              </div>
+              <div class="inline fields">
+                  <div class="three wide field">
+                    <label>活動類型</label>
+                  </div>
+                  <div class="four wide field">
+                    <select class="ui fluid dropdown" name="activity_type">
+                      <option value="">活動類型</option>
+                        <option value="6">可張貼六天:大褂報(不論活動類型)</option>
+                        <option value="12">可張貼兩週:小型活動 EX 迎新、送舊</option>
+                        <option value="18">可張貼三週:大型活動 EX 周展、營隊</option>
+                        <option value="24">可張貼四週:聯合活動 EX 聯合活動</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>欄位位置</label>
+                </div>
+                <div class="four wide field">
+                  <select class="ui fluid dropdown" name="field_position">
+                    <option value="">欄位位置</option>
+                      <option value="0">A-1</option>
+                      <!-- 欄位位置 index -->
+                  </select>
+                </div>
+              </div>
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>開始日期</label>
+                </div>
+                <div class="four wide field">
+                  <input type="text" name="start_day" placeholder="開始日期(yyyy/mm/dd)">
+                </div>
+              </div>
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>結束日期(當天撕掉)</label>
+                </div>
+                <div class="four wide field">
+                  <input type="text" name="end_day" placeholder="結束日期(yyyy/mm/dd)">
+                </div>
+              </div>
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>聯絡人名稱</label>
+                </div>
+                <div class="four wide field">
+                  <input type="text" name="user_name" placeholder="請輸入名稱">
+                </div>
+              </div>
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>聯絡人電話</label>
+                </div>
+                <div class="four wide field">
+                  <input type="text" name="user_phone" placeholder="請輸入電話">
+                </div>
+              </div>
+              <div class="inline fields">
+                <div class="three wide field">
+                  <label>聯絡人信箱</label>
+                </div>
+                <div class="four wide field">
+                  <input type="text" name="user_email" placeholder="請輸入電子信箱">
+                </div>
+              </div>
+            <div class="inline field">
+              <div class="ui toggle checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>我同意遵守國立中興大學學生會行政中心海報管理辦法之相關規定</label>
+              </div>
+            </div>
+            <div class="ui submit button">送出</div>
+          </div>
+        </div>
+
+          <div class="ui container" id="academic">
+              <p>1234567890</p>
+          </div>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="fourth">
+      Third
+
+
+      
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="fifth">
+      Third
+
+
+      
+    </div>
+  </div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>>

@@ -1,0 +1,83 @@
+.ui.container.ee .item {
+  height: 40px ;
+  width: 170px ;
+}
+
+.ui.container.ee{
+  height: 40px ;
+}
+body{
+  background-image: url("../image/background.png");
+}
+
+.ui.header.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-spacing: 10px;
+    font-size: 45px;
+    text-align: center;
+    font-family: Microsoft JhengHei;
+}
+
+.ui.header.about{
+    word-spacing: 5px;
+    text-align: center;
+    font-family: Microsoft JhengHei ;
+    font-weight: bold ;
+}
+
+.ui.list.about{
+    font-family: Microsoft JhengHei ;
+    font-size: 20px ;
+    font-weight: bold ;
+    padding-top: 10px ;
+}
+
+.ui.grid.about{
+    padding-top: 30px ;
+    background-image: url("../image/containerimg.png");
+}
+
+
+.fourteen.wide.column.about{
+    padding-top: 20px ;
+    background-color: #FFFFE7 ;
+}
+.ui.container.about .ui.list li{
+    line-height: 40px ;
+}
+
+.ui.form.select_organization{
+    padding-left: 50px ;
+}
+
+#clubs{
+    padding-left: 70px ;
+}
+
+#clubs .ui.form .inline.fields label{
+    font-family: Microsoft JhengHei ;
+    font-size: 17px ;
+    font-weight: bold ;
+}
+
+.ui.toggle.checkbox label{
+    font-family: Microsoft JhengHei ;
+    font-size: 16px ;
+}
+
+#academic{
+    padding-left: 70px ;
+}
+
+#administrative{
+    padding-left: 70px ;
+}
+.ui.submit.button{
+   margin-top: 10px; 
+}
+
+.inline.fields .ui.fluid.dropdown.selection{
+    width: 100% !important;
+}
+
